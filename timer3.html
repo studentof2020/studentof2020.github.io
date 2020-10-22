@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer 3</title>
+</head>
+<body>
+  <h1 id="timer">0</h1>
+  <button onclick="start();">START</button>
+  <button onclick="stop();">STOP</button>
+</body>
+<script>
+  var myVar;
+  function start()
+  {
+    var sec = 1;
+    myVar = setInterval(function()
+    {
+      document.getElementById("timer").innerHTML = sec;
+      sec++;
+    }, 1000);
+  }
+  function stop()
+  {
+    clearInterval(myVar);
+  }
+</script>
+</html>

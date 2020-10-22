@@ -34,19 +34,16 @@ div.btnbg {
     height: 150px;
     width: 600px;
 }
-.inpsubmit{
-    margin-top: 450px;
-    margin-left: 200px;
+#inpsubmit{
+    position: fixed;
+    margin-top: 600px;
+    margin-left: 450px;
+    display: none;
 }
 #btn1{
     position: fixed;
     margin-top: 600px;
     margin-left: 300px;
-}
-#btn2{
-    position: fixed;
-    margin-top: 600px;
-    margin-left: 450px;
 }
 #timertext{
     position: fixed;
@@ -69,15 +66,14 @@ div.btnbg {
         <h1 id="timertext">TIME in seconds : </h1>
         <h1 id="timer">0</h1>
         <button id="btn1" onclick="fun1();">START</button>
-        <button id="btn2" onclick="stop();">STOP</button>
         <div id="quesdiv">
             My name is Brain Twister and i will tell your typing speed.
             One important concept in Object-Oriented Programming is called polymorphism. The word polymorphic literally means many forms. As this concept is applied to computer programming, the idea is that there can be many ways that a particular behavior might be implemented. In relationship to our PyList container class that we are building, the idea is that each type of graphics command will know how to draw itself correctly. This polymorphic behavior can be deﬁned by creating a class and draw method for each different type of behavior.There is one class for each drawing command that will be processed by the program.
         </div>
-        <form action="index.html" method="get">
+        <form action="#" method="get" onsubmit="stop();">
 
             <textarea class="inp1" name="string"></textarea><br>
-            <input class="inpsubmit" type="submit" name="submit">
+            <input id="inpsubmit" type="submit" name="submit">
 
         
         

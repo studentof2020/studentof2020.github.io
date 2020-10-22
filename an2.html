@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#q1{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		#q2{
+			position: fixed;
+			top: 0px;
+			left: 40px;
+			display: none;
+		}
+		#q3{
+			position: fixed;
+			top: 0px;
+			left: 80px;
+			display: none;
+		}
+		#q4{
+			position: fixed;
+			top: 0px;
+			left: 120px;
+			display: none;
+		}
+		#q5{
+			position: fixed;
+			top: 0px;
+			left: 160px;
+			display: none;
+		}
+		#q6{
+			position: fixed;
+			top: 0px;
+			left: 200px;
+			display: none;
+		}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#q1").animate({left: '40px'},500);
+    setTimeout(function()
+    {
+        $("#q2").animate({left: '80px'},500),
+    	$("#q2").css({'display': 'block'});
+    	$("#q1").css({'display': 'none'});
+    },500);
+    setTimeout(function()
+    {
+        $("#q3").animate({left: '120px'},500),
+    	$("#q3").css({'display': 'block'});
+    	$("#q2").css({'display': 'none'});
+    },1000);
+    setTimeout(function()
+    {
+        $("#q4").animate({left: '160px'},500),
+    	$("#q4").css({'display': 'block'});
+    	$("#q3").css({'display': 'none'});
+    },1500);
+    setTimeout(function()
+    {
+        $("#q5").animate({left: '200px'},500),
+    	$("#q5").css({'display': 'block'});
+    	$("#q4").css({'display': 'none'});
+    },2000);
+    setTimeout(function()
+    {
+        $("#q6").animate({left: '240px'},500),
+    	$("#q6").css({'display': 'block'});
+    	$("#q5").css({'display': 'none'});
+    },2500);
+  });
+});
+
+// $(document).ready(function(){
+//   $("#p2").click(function(){
+//     $("#q2").animate({left: '60px'},500),
+//     $("#q2").css({'display': 'block'});
+//     $("#q1").css({'display': 'none'});
+//   });
+// });
+</script> 
+</head>
+
+<body>
+<div>
+	<img src="q1.png" id="q1" height="160px" width="80px">
+	<img src="q2.png" id="q2" height="160px" width="80px">
+	<img src="q3.png" id="q3" height="160px" width="80px">
+	<img src="q4.png" id="q4" height="160px" width="80px">
+	<img src="q5.png" id="q5" height="160px" width="80px">
+	<img src="q6.png" id="q6" height="160px" width="80px">
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+	<button>Start</button>
+</div>
+</body>
+</html>

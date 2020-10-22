@@ -2,7 +2,10 @@ var myVar;
 var sec;
 function fun1()
 {
-  start();
+	document.getElementById("quesdiv").style.display = "block";
+ 	document.getElementById("btn1").style.display = "none";
+ 	document.getElementById("inpsubmit").style.display = "block";
+ 	start();
 }
 function start()
 {
@@ -15,6 +18,6 @@ function start()
 }
 function stop()
 {
-  alert(sec);
+  alert(sec-1);
   clearInterval(myVar);
 }

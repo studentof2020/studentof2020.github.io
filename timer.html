@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+<!--<style>
+	#q1{
+		position: relative;
+	}
+</style>-->
+</head>
+	<!--<div>
+		<img src="human.png" id="q1" height="200px" width="150px">
+	</div><br>
+	<button id="p1">click</button>
+
+<script>
+	$(document).ready(function ()
+	{
+    	$('#p1').click(function ()
+    	{
+	        $('#q1').animate({top: '0px', left: '60px'}, 'slow')
+	        $('#q1').animate({top: '0px', left: '160px'}, 'slow')
+	    });
+	});
+</script>
+-->
+<body>
+	<p id="m1">0</p>
+	<button>click</button>
+</body>
+<script>
+	var x=0;
+		setInterval(fun2(), 1000);
+	function fun2()
+	{
+		x++;
+		document.getElementById('m1').innerHTML=x;
+	}
+</script>
+</html>
